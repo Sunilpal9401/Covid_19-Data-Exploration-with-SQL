@@ -27,5 +27,5 @@ According to the insights derived from the covid data :
 7.Europe had the total number of deaths recorded as per continent, followed by North America, Asia, and South America.
 ## Screenshots of Dataset of Covid_19
 
-![App Screenshot](https://raw.githubusercontent.com/Sunilpal9401/Covid_19-Data-Exploration-with-SQL/3d97b9a9d310ae8ebbe7a4ea5225bdcdadfc501e/Data%20Snapshot/1.jpg)
+![App Screenshot](https://github.com/Sunilpal9401/Covid_19-Data-Exploration-with-SQL/blob/main/Data%20Snapshot/1.jpg?raw=true)
 
