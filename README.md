@@ -205,8 +205,8 @@ FROM PopvsVac;
 ```
 
 
--- Using Temp Table to perform Calculation on Partition By in previous query
-
+Using Temp Table to perform Calculation on Partition By in previous query
+```sql
 DROP TABLE IF EXISTS  #PercentPopulationVaccinated
 CREATE TABLE #PercentPopulationVaccinated
 (
@@ -217,7 +217,6 @@ Population numeric,
 New_Vaccinations numeric,
 RollingPeopleVaccinated numeric
 )
-
 INSERT INTO #PercentPopulationVaccinated
 SELECT death.continent, death.location, death.date, death.population, vac.new_vaccinations, 
 SUM(CAST(vac.new_vaccinations AS bigint)) OVER (PARTITION BY death.location ORDER BY death.location, death.date) AS RollingPeopleVaccinated
@@ -232,8 +231,10 @@ SELECT *, (RollingPeopleVaccinated/Population) * 100 AS PercentRollingPeopleVacc
 FROM #PercentPopulationVaccinated;
 
 
+```
 
--- CREATING VIEW TO STORE DATA FOR DATA VISUALIZATION
+CREATING VIEW TO STORE DATA FOR DATA VISUALIZATION
+```sql
 CREATE VIEW PercentPopulationVaccinated AS
 SELECT death.continent, death.location, death.date, death.population, vac.new_vaccinations, SUM(CAST(vac.new_vaccinations AS bigint)) OVER 
 (PARTITION BY death.location ORDER BY death.location, death.date) AS RollingPeopleVaccinated
@@ -246,6 +247,8 @@ WHERE death.continent IS NOT NULL
 
 SELECT *
 FROM PercentPopulationVaccinated;
+
+```
 
 
 
