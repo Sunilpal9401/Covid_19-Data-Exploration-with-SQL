@@ -1,6 +1,11 @@
 
 ## Covid_19-Data-Exploration-with-SQL
 
+![Blue Modern Illustrated COVID-19 Medical Presentation (1)](https://github.com/user-attachments/assets/21a211cb-f877-463b-b953-98a52ef2c751)
+
+
+
+
 Covid 19 pandemic have had several short-term as well as long term impacts on human health, society, economy and environment. A pandemic which broke out in 2019 created significant knock-on effects on the daily life of citizens, as well as about the global economy.
 
 Presently the impacts of COVID-19 in daily life are extensive and have far reaching consequences.
